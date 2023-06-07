@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Welcome",
+    "id": "welcomeSection",
+    "component": "WelcomeSection"
+  },
+  {
+    "label": "Section 1",
+    "id": "clickMe",
+    "component": "ClickMeSection"
+  },
+  {
+    "label": "Section 2",
+    "id": "baked",
+    "component": "BakedSceneSection"
+  }
+]
