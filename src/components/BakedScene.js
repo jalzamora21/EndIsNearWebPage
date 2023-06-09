@@ -69,10 +69,8 @@ const BakedSceneGeometry = (props) => {
   const { ref: meshRef, mixer, names, actions, clips } = useAnimations(fbx.animations)
 
   useEffect(() => {
-    // TODO He quitado el modelo ya que era muy grande para subirlo a git, falta comprimirlo para subirlo
-
-    actions?.['mixamo.com']?.play()
-    // actions?.['Armature|Armature|mixamo.com|Layer0']?.play()
+    // actions?.['mixamo.com']?.play()
+    actions?.['Armature|Armature|mixamo.com|Layer0']?.play()
   })
 
   // useEffect(() => {
