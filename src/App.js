@@ -17,7 +17,12 @@ const App = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Leva hidden={!debugActive} />
+      <Leva hidden={!debugActive} titleBar={{
+          position: {
+            x: 0,
+            y: 95,
+          },
+      }} />
       <CssBaseline />
       <MainPage />
       <IconButton
