@@ -59,12 +59,17 @@ const WelcomeSection = ({id}) => {
                   sx={{
                       overflow: 'hidden'
                   }}>
-        <video style={{
+        {/*<video style={{*/}
+        {/*    width: '100%',*/}
+        {/*    height: '100%',*/}
+        {/*    objectFit: 'cover'*/}
+        {/*}} src="/static/3e78e80.mp4"*/}
+        {/*       autoPlay loop muted></video>*/}
+        <img src="/static/banner.png" alt="Page banner" style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover'
-        }} src="/static/3e78e80.mp4"
-               autoPlay loop muted></video>
+        }}/>
         {/*<Box sx={{*/}
         {/*    display: 'flex',*/}
         {/*    justifyContent: 'center',*/}
