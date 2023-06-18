@@ -32,8 +32,8 @@ const ClickMeSection = ({id}) => {
                 gap: '20px',
                 my: 2
             }}>
-                <a href="#"><img src="/static/OculusBadge.png"/></a>
-                <a href="#"><img src="/static/Steam_badge_website.png"/></a>
+                <a href="#"><img src={`${process.env.URL_PREFIX ?? ''}/static/OculusBadge.png`}/></a>
+                <a href="#"><img src={`${process.env.URL_PREFIX ?? ''}/static/Steam_badge_website.png`}/></a>
             </Box>
         </Grid>
     </Grid>);
@@ -65,7 +65,7 @@ const WelcomeSection = ({id}) => {
         {/*    objectFit: 'cover'*/}
         {/*}} src="/static/3e78e80.mp4"*/}
         {/*       autoPlay loop muted></video>*/}
-        <img src="/static/banner.png" alt="Page banner" style={{
+        <img src={`${process.env.URL_PREFIX ?? ''}/static/banner.png`} alt="Page banner" style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover'
@@ -93,7 +93,7 @@ const MainPage = () => {
     const [contentConfig, setContentConfig] = useState();
 
     useEffect(() => {
-        fetch('/content.json')
+        fetch(`${process.env.URL_PREFIX ?? ""}/content.json`)
             .then((data) => data.json())
             .then((json) => setContentConfig(json));
     }, []);
@@ -110,7 +110,7 @@ const MainPage = () => {
                     display: 'flex',
                     justifyContent: 'space-between'
                 }}>
-                    <img src="/static/Logo.png" style={{
+                    <img src={`${process.env.URL_PREFIX ?? ''}/static/Logo.png`} style={{
                         height: '70px',
                     }}/>
                     <Button onClick={() => document.getElementById('clickMe').scrollIntoView({behavior: 'smooth'})}
