@@ -65,7 +65,7 @@ const BakedSceneGeometry = (props) => {
   //   texture.flipY = false;
   //   texture.encoding = sRGBEncoding;
   // });
-  const fbx = useFBX(`${process.env.URL_PREFIX ?? ''}/static/zombie.fbx`);
+  const fbx = useFBX(`static/zombie.fbx`);
   const { ref: meshRef, mixer, names, actions, clips } = useAnimations(fbx.animations)
 
   useEffect(() => {
