@@ -1,6 +1,7 @@
 {
   "name": "r3f_proj",
   "version": "0.1.0",
+  "homepage": "/EndIsNearWebPage",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

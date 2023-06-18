@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Welcome",
+    "id": "welcomeSection",
+    "component": "WelcomeSection"
+  },
+  {
+    "label": "Download",
+    "id": "clickMe",
+    "component": "ClickMeSection"
+  }
+]
