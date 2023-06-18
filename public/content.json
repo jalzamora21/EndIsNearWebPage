@@ -5,13 +5,8 @@
     "component": "WelcomeSection"
   },
   {
-    "label": "Section 1",
+    "label": "Download",
     "id": "clickMe",
     "component": "ClickMeSection"
-  },
-  {
-    "label": "Section 2",
-    "id": "baked",
-    "component": "BakedSceneSection"
   }
 ]
