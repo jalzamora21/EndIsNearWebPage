@@ -93,7 +93,7 @@ const MainPage = () => {
     const [contentConfig, setContentConfig] = useState();
 
     useEffect(() => {
-        fetch(`${process.env.URL_PREFIX ?? ""}/content.json`)
+        fetch(`content.json`)
             .then((data) => data.json())
             .then((json) => setContentConfig(json));
     }, []);
